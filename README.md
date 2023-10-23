@@ -1,1 +1,1 @@
-# LangChain-and-Vector-Databases-in-Production
+# LangChain & Vector Databases in Production

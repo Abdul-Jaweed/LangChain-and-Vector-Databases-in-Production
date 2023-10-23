@@ -7,3 +7,5 @@ google-api-python-client
 huggingface_hub
 transformers
 pypdf==3.10.0
+newspaper3k==0.2.8
+requests
