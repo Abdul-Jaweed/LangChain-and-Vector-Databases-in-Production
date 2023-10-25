@@ -9,3 +9,4 @@ transformers
 pypdf==3.10.0
 newspaper3k==0.2.8
 requests
+sentencepiece==0.1.99
