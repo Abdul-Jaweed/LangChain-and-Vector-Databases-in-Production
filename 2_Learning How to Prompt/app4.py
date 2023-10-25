@@ -20,6 +20,9 @@
 from langchain import FewShotPromptTemplate, PromptTemplate, LLMChain
 from langchain.llms import OpenAI
 
+import os
+from dotenv import load_dotenv
+
 load_dotenv()
 
 apikey = os.getenv("OPENAI_API_KEY")
