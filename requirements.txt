@@ -14,3 +14,4 @@ pydantic
 pyvis==0.3.2
 unstructured 
 selenium
+nltk
