@@ -116,3 +116,31 @@ response = qa_chain.run(query)
 print(response)
 
 
+
+
+
+
+from langchain.retrievers import ContextualCompressionRetriever
+from langchain.retrievers.document_compressors import LLMChainExtractor
+
+
+# Create compressor for the retriever
+
+compressor = LLMChainExtractor.from_llm(llm)
+compresion_retriever = ContextualCompressionRetriever(
+    base_compressor=compressor,
+    base_retriever=retriever
+)
+
+
+
+# Once we have created the compression_retriever, we can use it to retrieve the compressed relevant documents to a query.
+
+
+# retrieving compressed documents.
+
+retrieved_docs = compresion_retriever.get_relevant_documents(
+    "How Google plans to challenge OpenAI?"
+)
+
+print(retrieved_docs[0].page_content)
