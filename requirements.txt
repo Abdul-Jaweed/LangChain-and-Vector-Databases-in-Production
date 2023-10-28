@@ -12,3 +12,5 @@ requests
 sentencepiece==0.1.99
 pydantic
 pyvis==0.3.2
+unstructured 
+selenium
