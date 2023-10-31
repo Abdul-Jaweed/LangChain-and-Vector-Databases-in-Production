@@ -5,6 +5,7 @@
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
 from langchain.output_parsers import CommaSeparatedListOutputParser
+from langchain import PromptTemplate, OpenAI, LLMChain
 
 import os
 from dotenv import load_dotenv

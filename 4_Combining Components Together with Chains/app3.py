@@ -4,6 +4,7 @@
 
 
 from langchain.chains import SimpleSequentialChain
+from langchain import PromptTemplate, OpenAI, LLMChain
 
 import os
 from dotenv import load_dotenv
