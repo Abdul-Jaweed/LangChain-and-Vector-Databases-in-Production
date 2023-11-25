@@ -14,4 +14,13 @@ llm = OpenAI(
 )
 
 
-tools = load_
+agent = initialize_agent(
+    tools,
+    llm,
+    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+    verbose=True  
+)
+
+tools = load_tools(["wikipedia"])
+
+print( agent.run("What is Nostradamus know for") )
