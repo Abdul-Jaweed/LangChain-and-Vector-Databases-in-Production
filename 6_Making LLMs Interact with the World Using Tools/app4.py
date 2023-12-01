@@ -6,6 +6,8 @@ from langchain import OpenAI
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
+
 api_key = os.get_env("OPENAI_API_KEY")
 
 llm = OpenAI(
