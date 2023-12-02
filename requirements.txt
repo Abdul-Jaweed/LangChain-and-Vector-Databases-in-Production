@@ -25,3 +25,4 @@ audio-recorder-streamlit==0.0.8
 streamlit-chat==0.0.2.2
 Wolframalpha
 langchain-experimental
+faiss-cpu
